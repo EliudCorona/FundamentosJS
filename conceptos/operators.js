@@ -34,5 +34,4 @@ console.log(10 === 3);
 console.log(10 != 3);
 console.log(10 !== 3);
 
-//operadores Logicos
-console.log(true yy true)
+
