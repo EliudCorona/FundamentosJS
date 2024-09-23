@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijeras</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .content {
+            width: 60%;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+        .users {
+            display: flex;
+        }
+
+        .users div {
+            width: 50%;
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            background-color: rgb(61, 44, 220);
+            color: yellow;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: rgb(14, 222, 17);
+            color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+    <div class="row"><button>Jugar</button></div>
+    <div class="row users">
+        <div>Usuario</div>
+        <div>Computadora</div>
+    </div>
+    <div class="row">
+        <h1>Resultado!</h1>
+    </div>
+</div>
+</body>
+
+</html>
