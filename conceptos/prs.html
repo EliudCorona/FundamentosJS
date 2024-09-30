@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piedra, papel o tijeras</title>
+    <title>Piedra, Papel y Tijeras</title>
     <style>
-        body {
+        body{
             margin: 0;
             padding: 0;
             width: 100vw;
@@ -14,57 +13,51 @@
             display: grid;
             place-items: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(71, 142, 235) ;
         }
-
-        .content {
+        .content{
             width: 60%;
             height: inherit;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center; 
             text-align: center;
         }
-
-        .row {
-            width: 100%;
-        }
-
-        .users {
-            display: flex;
-        }
-
-        .users div {
-            width: 50%;
-        }
-
-        button {
+        .row{ width: 100%;}
+        .users{ display: flex;}
+        .users div{width: 50%;}
+        button{
             width: 200px;
             height: 50px;
             border: none;
-            background-color: rgb(61, 44, 220);
-            color: yellow;
+            background-color: rgb(35, 4, 136);
+            color: rgb(135, 212, 233);
             font-weight: bold;
         }
-
-        button:hover {
-            background-color: rgb(14, 222, 17);
+        button:hover{
+            background-color: aqua;
             color: black;
-
         }
     </style>
 </head>
-
 <body>
+    <a href="../index.html">Volver al inicio</a>
     <div class="content">
-    <div class="row"><button>Jugar</button></div>
-    <div class="row users">
-        <div>Usuario</div>
-        <div>Computadora</div>
+        <div class="row"><button>Jugar</button></div>
+        <div class="row users">
+            <div id="user">    
+                <h2>Usuario 🤠 </h2>
+                <h3>Eligió: <span></span></h3>
+            </div>    
+            <div id="compu">    
+                <h2>Computadora &#128187;</h2>
+                <h3>Eligió: <span></span></h3>
+            </div>    
+        </div>
+        <div class="center">
+            <h1>RESULTADO!</h1>
+        </div>
     </div>
-    <div class="row">
-        <h1>Resultado!</h1>
-    </div>
-</div>
 </body>
-
+<script src="prs.js"></script>
 </html>
